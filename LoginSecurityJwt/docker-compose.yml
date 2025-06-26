@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  proyect-backend:
+    build: .
+    container_name: proyect-backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://151.106.110.1:3306/u777467137_Roman?useSSL=false&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: u777467137_Juancito
+      SPRING_DATASOURCE_PASSWORD: Logaritmo_10+
+      JWT_SECRET: TXlTdXBlclNlY3JldEtleU1vcmVUaGFuMzJDaGFyYWN0ZXJzIQ==
